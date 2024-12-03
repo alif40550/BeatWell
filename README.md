@@ -1,7 +1,7 @@
 <h1 align="center"> BeatWell </h1> <br>
 <p align="center">
   <a href="https://gitpoint.co/">
-    <img alt="GitPoint" title="GitPoint" src="http://i.imgur.com/VShxJHs.png" width="450">
+    <img alt="GitPoint" title="GitPoint" src="./logo.png" width="450">
   </a>
 </p>
 
@@ -9,7 +9,7 @@
   Smart health mobile app to prevent coronary heart disease to support
  Sustainable Development Goals
 </p>
-
+<p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.gitpoint">
     <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png" width="140">
   </a>
