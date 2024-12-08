@@ -19,12 +19,31 @@ export const createPayload = (user: User): UserData => {
 };
 
 export const createUser = async (user: SignUpData) => {
-  const password = await bcrypt.hash(user.password!, 10);
+  const password = user.password;
+  const name = user.name;
   return await prisma.user.create({
     data: {
-      name: user.name || user.email.split('@')[0],
-      email: user.email,
-      password: password,
+      ...user,
+      name: name || user.email.split('@')[0],
+      password: password && await bcrypt.hash(password, 10),
     },
   });
 };
+
+export const reviseUser = async (id: number, user: SignUpData) => {
+  const password = user.password;
+  return await prisma.user.update({
+    where: { id },
+    data: {
+      ...user,
+      password: password && await bcrypt.hash(password, 10),
+    },
+  });
+};
+
+export const destroyUser = async (id: number) =>
+  await prisma.user.delete({
+    where: {
+      id,
+    },
+  });

@@ -2,6 +2,13 @@
 
 - Method: **GET**
 - Endpoint: **/activity**
+- Headers:
+
+```json
+{
+  "Authorizaton": "access_token"
+}
+```
 
 ## Responses (Success)
 

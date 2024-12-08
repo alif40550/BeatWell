@@ -7,6 +7,7 @@ import { getResponse, predictClass } from '../services/chatbot';
 import { verifyToken } from '../libs/jwt';
 import { sexMap } from '../models/Model';
 import { formatInput, formatSex } from '../services/model';
+import { bmiCalculator } from '../services/bmi';
 
 export const predictCHD = async (req: Request, res: Response) => {
   const token = req.headers.authorization!;
@@ -23,7 +24,13 @@ export const predictCHD = async (req: Request, res: Response) => {
       });
       return;
     }
-    const input = formatInput({ ...validatedBody, sex });
+    const BMI = bmiCalculator(validatedBody.height, validatedBody.weight);
+
+    const input = formatInput({
+      ...validatedBody,
+      sex,
+      BMI,
+    });
     const persentage = await makePrediction(input);
 
     await addHistory({
@@ -34,7 +41,10 @@ export const predictCHD = async (req: Request, res: Response) => {
     res.status(200).json({
       message: 'Prediction success',
       error: false,
-      data: persentage,
+      data: {
+        risk: persentage,
+        date: new Date(Date.now()).toISOString(),
+      },
     });
   } catch (err) {
     res.status(400).json({
