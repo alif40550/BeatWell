@@ -4,7 +4,7 @@ import startServer from '../src/libs/server';
 const server = startServer();
 
 afterAll(() => {
-  server.close();
+  // server.close();
 });
 
 describe('GET /', () => {

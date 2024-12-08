@@ -2,10 +2,13 @@
 
 - Endpoint: **/prediction**
 - Method: **POST**
+- Headers:
 
-## Request Header
-
-- Authorization: **token**
+```json
+{
+  "Authorizaton": "access_token"
+}
+```
 
 ## Request Body
 
@@ -36,7 +39,8 @@
     "message": "Prediction success",
     "error": false,
     "data": {
-      "prediction": 0 //tidak terkena CHD (buat persen sajah)
+      "risk": 0,
+      "date": "tanggal" //tidak terkena CHD (buat persen sajah)
     }
   }
 }
@@ -67,7 +71,7 @@
 
 ```json
 {
-  "message":"haloooooo"
+  "message": "haloooooo"
 }
 ```
 

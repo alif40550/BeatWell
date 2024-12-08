@@ -5,7 +5,10 @@ import {
   getHistoryById,
 } from '../services/history';
 
-export const indexUserHistories = async (req: Request, res: Response) => {
+export const indexUserHistories = async (
+  req: Request,
+  res: Response
+) => {
   const userId = req.params.id;
   if (!userId) {
     res.status(400).json({
@@ -14,8 +17,6 @@ export const indexUserHistories = async (req: Request, res: Response) => {
     });
     return;
   }
-  // console.log('🚀 ~ indexUserHistories ~ userId:', userId);
-
   const histories = await getHistories(Number(userId));
   res.status(200).json({
     message: 'berhasil mendapatkan list history',

@@ -15,18 +15,14 @@ const accessValidation = (req: Request, res: Response, next: NextFunction) => {
     return;
   }
 
-  //   const token = authorization.split(' ')[1];
-  const secret = JWT_SECRET!;
-  // console.log(secret);
-
   try {
-    const jwtDecode = jwt.verify(authorization, secret);
+    const jwtDecode = jwt.verify(authorization, JWT_SECRET!);
     if (typeof jwtDecode !== 'string') {
       validationReq.userData = jwtDecode as UserData;
     }
   } catch {
     res.status(401).json({
-      message: 'Unauthorized',
+      message: 'Token tidak valid',
       error: true,
     });
     return;

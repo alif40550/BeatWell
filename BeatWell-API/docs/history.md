@@ -2,6 +2,13 @@
 
 - Method: **GET**
 - Endpoint: **/users/{id}/histories**
+- Headers:
+
+```json
+{
+  "Authorizaton": "access_token"
+}
+```
 
 ## Responses (Success)
 

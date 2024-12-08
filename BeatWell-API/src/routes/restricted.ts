@@ -5,6 +5,7 @@ import { accessValidation } from '../middlewares/auth';
 import { chat, predictCHD } from '../controllers/modelController';
 import { getById, indexUserHistories } from '../controllers/historyController';
 import { getTrivia } from '../controllers/triviaController';
+import { deleteCurrentUser, updateCurrentUser } from '../controllers/userController';
 
 const router = Router();
 
@@ -17,7 +18,8 @@ router.post('/chatbot', chat);
 router.get('/users/:id/histories', indexUserHistories);
 router.get('/histories/:id', getById);
 router.get('/trivia', getTrivia);
-// !! INI MAU DIBUAT YANG BISA HAPUS HANYA USER SENDIRI APA TIDAK?
+router.patch('/users', updateCurrentUser);
+router.delete('/users', deleteCurrentUser);
 router.delete('/histories/:id', getById);
 
 export default router;

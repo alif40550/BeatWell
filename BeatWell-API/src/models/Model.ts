@@ -4,6 +4,7 @@ type PredictionRequest = typeof predictionSchema._type;
 
 export type PredictionInputs = Omit<PredictionRequest, 'sex'> & {
   sex: number;
+  BMI: number;
 };
 
 export type TIntent = {
