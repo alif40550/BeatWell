@@ -61,7 +61,8 @@ class PredictActivity : AppCompatActivity() {
             totChol = binding.edChol.text.toString().toIntOrNull() ?: 0,
             sysBP = binding.edSys.text.toString().toIntOrNull() ?: 0,
             diaBP = binding.edDia.text.toString().toIntOrNull() ?: 0,
-            BMI = binding.edBmi.text.toString().toIntOrNull() ?: 0,
+            height = binding.edHeight.text.toString().toIntOrNull() ?: 0,
+            weight = binding.edWeight.text.toString().toIntOrNull() ?: 0,
             heartRate = binding.edHeartRate.text.toString().toIntOrNull() ?: 0,
             glucose = binding.edGlucose.text.toString().toIntOrNull() ?: 0
         )
@@ -70,8 +71,8 @@ class PredictActivity : AppCompatActivity() {
 
     private fun showConfirmationDialog() {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Konfirmasi Data")
-        builder.setMessage("Apakah data sudah benar dan Anda ingin melanjutkan?")
+        builder.setTitle(getString(R.string.text_data_confirmation))
+        builder.setMessage(getString(R.string.text_desc_data_confirmation))
 
         builder.setPositiveButton(getString(R.string.yes)) { dialog, _ ->
             dialog.dismiss()
@@ -94,8 +95,13 @@ class PredictActivity : AppCompatActivity() {
                 is Result.Success -> {
                     binding.progressBar.visibility = android.view.View.GONE
                     val intentResult = Intent(this, ResultActivity::class.java)
-                    intentResult.putExtra("result", result.data.data)
+                    val bundle = Bundle().apply {
+                        putInt("result", result.data.data.risk)
+                        putString("date", result.data.data.date)
+                    }
+                    intentResult.putExtras(bundle)
                     startActivity(intentResult)
+                    finish()
                 }
                 is Result.Error -> {
                     binding.progressBar.visibility = android.view.View.GONE
