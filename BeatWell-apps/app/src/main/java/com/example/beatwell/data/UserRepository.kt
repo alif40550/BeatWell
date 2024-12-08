@@ -46,6 +46,9 @@ class UserRepository private constructor(
     }
 
     suspend fun logout(){
+        CoroutineScope(Dispatchers.IO).launch {
+            historyDao.clearAllData()
+        }
         userPreference.logout()
     }
 
@@ -160,7 +163,6 @@ class UserRepository private constructor(
                     request,
                     user.token
                 )
-                Log.d("UserRepository", "token: ${user.token}")
                 client.enqueue(object : Callback<PredictResponse>{
                     override fun onResponse(
                         call: Call<PredictResponse>,
@@ -220,10 +222,6 @@ class UserRepository private constructor(
         return result
     }
 
-    fun getLastHistory(): HistoryEntity{
-        return historyDao.getLastHistory()
-    }
-
     fun getHistory(): LiveData<Result<HistoryEntity>>{
         val result = MutableLiveData<Result<HistoryEntity>>()
         result.value = Result.Loading
@@ -258,6 +256,7 @@ class UserRepository private constructor(
                     }
                 })
                 val latestHistory = historyDao.getLastHistory()
+                Log.d("UserRepository", "latestHistory: $latestHistory")
                 result.postValue(Result.Success(latestHistory))
             }
         }

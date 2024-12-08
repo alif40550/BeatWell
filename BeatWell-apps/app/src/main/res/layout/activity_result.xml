@@ -48,6 +48,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gradient_background_1"
                 android:padding="16dp">
 
                 <TextView
@@ -70,6 +71,16 @@
                     android:textSize="90sp"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/tv_result"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_predict" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
