@@ -53,9 +53,7 @@ export const predictClass = async (sentence: string) => {
 };
 
 export const getResponse = (tag: string) => {
-  console.log('🚀 ~ getResponse ~ tag:', tag);
   const intent = intents.find((intent: TIntent) => intent.tag === tag);
-  console.log('🚀 ~ getResponse ~ intent:', intent);
   if (intent) {
     return intent.responses[
       Math.floor(Math.random() * intent.responses.length)

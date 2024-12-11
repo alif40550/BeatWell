@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "tag": "sapaan-hi",
+      "tag": "sapaanHi",
       "patterns": ["Hi", "Halo", "Apa kabar", "Ada orang disini?", "P"],
       "responses": [
         "Halo, bagaimana saya bisa membantu menjaga kesehatan jantung Anda?",
@@ -11,31 +11,31 @@
       "context_set": ""
     },
     {
-      "tag": "sapaan-pagi",
+      "tag": "sapaanPagi",
       "patterns": ["Selamat pagi", "Pagi"],
       "responses": ["Selamat pagi! Semoga harimu menyenangkan."],
       "context_set": ""
     },
     {
-      "tag": "sapaan-siang",
+      "tag": "sapaanSiang",
       "patterns": ["Selamat siang", "Siang"],
       "responses": ["Selamat siang! Ada yang bisa saya bantu?"],
       "context_set": ""
     },
     {
-      "tag": "sapaan-sore",
+      "tag": "sapaanSore",
       "patterns": ["Selamat sore", "Sore"],
       "responses": ["Selamat sore! Semoga aktivitasmu berjalan lancar."],
       "context_set": ""
     },
     {
-      "tag": "sapaan-malam",
+      "tag": "sapaanMalam",
       "patterns": ["Selamat malam", "Malam"],
       "responses": ["Selamat malam! Jangan lupa istirahat yang cukup."],
       "context_set": ""
     },
     {
-      "tag": "sapaan-salam",
+      "tag": "sapaanSalam",
       "patterns": ["Assalamualaikum"],
       "responses": ["Waalaikumsalam"],
       "context_set": ""
@@ -47,19 +47,19 @@
       "context_set": ""
     },
     {
-      "tag": "selamat-tinggal",
+      "tag": "selamatTinggal",
       "patterns": ["Selamat tinggal"],
       "responses": ["Selamat tinggal! Jaga kesehatan, ya."],
       "context_set": ""
     },
     {
-      "tag": "sampai-jumpa",
+      "tag": "sampaiJumpa",
       "patterns": ["Sampai jumpa", "Jumpa nanti"],
       "responses": ["Sampai jumpa lagi! Terima kasih sudah berkunjung."],
       "context_set": ""
     },
     {
-      "tag": "sampai-nanti",
+      "tag": "sampaiNanti",
       "patterns": ["Sampai nanti", "Sampai bertemu lagi"],
       "responses": [
         "Sampai nanti! Jangan ragu untuk kembali jika butuh bantuan.",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "tag": "ucapan_terima_kasih",
+      "tag": "ucapanTerimaKasih",
       "patterns": [
         "Terima kasih",
         "Makasih",
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "tag": "gejala-serangan-jantung",
+      "tag": "gejalaSeranganJantung",
       "patterns": [
         "Apa itu serangan jantung?",
         "Bagaimana tanda-tanda serangan jantung?",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "tag": "tanda-nyeri",
+      "tag": "tandaNyeri",
       "patterns": ["Bagaimana tanda nyeri dada yang bahaya?"],
       "responses": [
         "Nyeri dada terasa menjalar hingga punggung dan punggung terasa capek",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "tag": "sesak-napas",
+      "tag": "sesakNapas",
       "patterns": [
         "Sering ngos-ngosan meski gak olahraga, itu tanda masalah jantung ya?",
         "Kalau susah napas pas jalan biasa, apa itu bahaya?"
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "tag": "tanda-jantung-lemah",
+      "tag": "tandaJantungLemah",
       "patterns": ["Apakah ngos-ngosan tanda jantung lemah?"],
       "responses": [
         "Belum tentu. Ngos-ngosan juga bisa disebabkan oleh anemia atau masalah paru-paru. Pemeriksaan lebih lanjut diperlukan.,"
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "tag": "aktivitas-berat",
+      "tag": "aktivitasBerat",
       "patterns": [
         "Kalau dada sesak setelah naik tangga atau aktivitas berat, itu harus dicek lebih lanjut gak?",
         "Apa tanda gagal jantung dari sesak napas?",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "tag": "tekanan-darah",
+      "tag": "tekananDarah",
       "patterns": [
         "Kenapa sering hampir pingsan tanpa sebab?",
         "Kalau kepala sering ringan, apa itu ada kaitannya dengan jantung?",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "tag": "otot-tegang",
+      "tag": "ototTegang",
       "patterns": [
         "Dada terasa berat dan kaku, itu masalah jantung atau cuma otot tegang?",
         "Apa bedanya nyeri dada biasa dan masalah jantung?",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "tag": "keringat-dingin",
+      "tag": "keringatDingin",
       "patterns": [
         "Kalau sering berkeringat dingin tanpa aktivitas berat, itu tanda bahaya gak?",
         "Kenapa suka keluar keringat dingin tiba-tiba?",
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "tag": "penyakit-jantung",
+      "tag": "penyakitJantung",
       "patterns": [
         "Apa saja gejala penyakit jantung?",
         "Gejala serangan jantung apa yang harus diwaspadai?",
@@ -216,7 +216,7 @@
       "context_set": "penyakit-jantung"
     },
     {
-      "tag": "penanganan_darurat",
+      "tag": "penangananDarurat",
       "patterns": [
         "Apa yang harus dilakukan saat terkena serangan jantung?",
         "Apa yang harus dilakukan jika seseorang mengalami nyeri dada hebat?",
@@ -229,7 +229,7 @@
       "context_set": "penyakit-jantung"
     },
     {
-      "tag": "pencegahan-penyakit-jantung",
+      "tag": "pencegahanPenyakitJantung",
       "patterns": [
         "Bagaimana cara mencegah penyakit jantung?",
         "Apa yang bisa dilakukan untuk menghindari penyakit jantung?",
@@ -246,7 +246,7 @@
       "context_filter": "penyakit-jantung"
     },
     {
-      "tag": "diet-jantung",
+      "tag": "dietJantung",
       "patterns": [
         "Apa makanan yang baik untuk jantung?",
         "Makanan apa yang harus dihindari supaya jantung sehat?",
@@ -259,7 +259,7 @@
       ]
     },
     {
-      "tag": "olahraga-jantung",
+      "tag": "olahragaJantung",
       "patterns": [
         "Olahraga apa yang baik untuk kesehatan jantung?",
         "Bisa nggak sih olahraga buat jantung tanpa harus ke gym?",
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "tag": "deteksi-awal-jantung",
+      "tag": "deteksiAwalJantung",
       "patterns": [
         "Bagaimana cara mendeteksi masalah jantung sejak dini?",
         "Apakah ada cara sederhana untuk cek kesehatan jantung?",
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "tag": "bahaya-stres-jantung",
+      "tag": "bahayaStresJantung",
       "patterns": [
         "Apa bahaya stres untuk jantung?",
         "Kenapa stres bisa berbahaya bagi jantung?",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "tag": "stres-dan-jantung",
+      "tag": "stresDanJantung",
       "patterns": [
         "Apakah stres bisa menyebabkan penyakit jantung?",
         "Apa efek stres pada jantung?",
@@ -317,7 +317,7 @@
       ]
     },
     {
-      "tag": "detak-jantung-dan-stres",
+      "tag": "detakJantungDanStres",
       "patterns": [
         "Apa hubungan stres dengan detak jantung cepat?",
         "Mengapa detak jantung saya meningkat saat stres?",
@@ -330,7 +330,7 @@
       ]
     },
     {
-      "tag": "mengelola-stres",
+      "tag": "mengelolaStres",
       "patterns": [
         "Bagaimana cara mengelola stres?",
         "Apa tips agar tidak mudah stres?",
@@ -345,7 +345,7 @@
       ]
     },
     {
-      "tag": "riwayat-rokok",
+      "tag": "riwayatRokok",
       "patterns": [
         "Apakah kebiasaan merokok mempengaruhi resiko penyakit jantung koroner?",
         "Bagaimana dampak merokok terhadap kesehatan jantung?",
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "tag": "menghindari-rokok",
+      "tag": "menghindariRokok",
       "patterns": [
         "Bagaimana cara menghindari kecanduan pada rokok?",
         "Bagaimana dampak merokok terhadap kesehatan jantung?",
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "tag": "no-answer",
+      "tag": "noAnswer",
       "patterns": [
         "",
         "Saya tidak mengerti",
