@@ -1,7 +1,7 @@
 <h1 align="center"> BeatWell </h1> <br>
 <p align="center">
   <a href="https://gitpoint.co/">
-    <img alt="GitPoint" title="GitPoint" src="./logo.png" width="450">
+    <img alt="GitPoint" title="GitPoint" src="./logo.png" width="200">
   </a>
 </p>
 
