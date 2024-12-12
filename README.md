@@ -45,7 +45,7 @@ View repository and user information, control your notifications and even manage
 **Available on Android.**
 
 <p align="center">
-  <img src = "http://i.imgur.com/HowF6aM.png" width=350>
+  <img src = "./asset/mockup-1.png" width=700>
 </p>
 
 ## Features
@@ -59,11 +59,7 @@ A few of the things you can do with BeatWell:
 - Daily news about health
 
 <p align="center">
-  <img src = "http://i.imgur.com/IkSnFRL.png" width=700>
-</p>
-
-<p align="center">
-  <img src = "http://i.imgur.com/0iorG20.png" width=700>
+  <img src = "./asset/mockup-2.png" width=700>
 </p>
 
 ## Contributors
