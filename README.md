@@ -24,6 +24,7 @@
 - [Features](#features)
 - [Contributors](#contributors)
 - [Acknowledgments](#acknowledgments)
+- [Special Thanks](#specialthanks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -38,10 +39,13 @@
 
 View repository and user information, control your notifications and even manage your issues and pull requests. Built with React Native, GitPoint is one of the most feature-rich unofficial GitHub clients that is 100% free.
 
+Youtube presentation link : <a href="https://youtu.be/h-w8MkMm3Nk">Presentation link</a> <br>
+Youtube App Demo link : <a href="https://www.youtube.com/watch?v=0sAqPzTFpUA">App Demo link</a>
+
 **Available on Android.**
 
 <p align="center">
-  <img src = "./asset/mockup-1.png" width=700>
+  <img src = "./asset/bumper.png" width=700>
 </p>
 
 ## Features
@@ -55,7 +59,7 @@ A few of the things you can do with BeatWell:
 - Daily news about health
 
 <p align="center">
-  <img src = "./asset/mockup-2.png" width=700>
+  <img src = "./asset/mockup.png" width=700>
 </p>
 
 ## Contributors
@@ -76,3 +80,8 @@ this is not the main repositories, this is just a remote repositories, you can f
 The models : <a href="https://github.com/Kannnnz/BeatWell-Models"> Model Repositories</a> <br>
 The API : <a href="https://github.com/alif40550/BeatWell-API"> API Repositories </a> <br>
 The App : <a href="https://github.com/nopal72/beatWell-apps "> App Repositories </a>
+
+## Special Thanks
+Special Thanks to : <br>
+1. kak Angel Metanosa Afinda as our Machine Learning Advisor <br>
+2. kak Ridho Sitanggang as our Project Manager Advisor
