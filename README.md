@@ -75,7 +75,7 @@ This project is capstone project for Bangkit Academy Batch 2 2024 with our membe
 
 ## Acknowledgments
 
-this is not the main repositories, this is just a remote repositories, tou can find the main repositories : <br> <br>
+this is not the main repositories, this is just a remote repositories, you can find the main repositories : <br> <br>
 The models : <a href="https://github.com/Kannnnz/BeatWell-Models"> Model Repositories</a> <br>
 The API : <a href="https://github.com/alif40550/BeatWell-API"> API Repositories </a> <br>
 The App : <a href="https://github.com/nopal72/beatWell-apps "> App Repositories </a>
