@@ -22,11 +22,7 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Feedback](#feedback)
 - [Contributors](#contributors)
-- [Build Process](#build-process)
-- [Backers](#backers-)
-- [Sponsors](#sponsors-)
 - [Acknowledgments](#acknowledgments)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -66,12 +62,13 @@ A few of the things you can do with BeatWell:
 
 This project is capstone project for Bangkit Academy Batch 2 2024 with our members:
 
-1. Wikan Haydarrahman
-2. Arfiana Maulidiyah
-3. Silvi Nurcahyaningsih
-4. Alifian
-5. Ahmad Hamid
-6. Naufal Muhammad
+1. M283B4KY4478 – Wikan Haydarrahman – Universitas Negeri Semarang - Machine Learning 
+2. M225B4KX0617 – Arfiana Maulidiyah – Universitas Islam Sultan Agung - Machine Learning 
+3. M225B4KX4154 – Silvi Nurcahyaningsih – Universitas Islam Sultan Agung - Machine Learning 
+4. C283B4KY0397 – Alifian – Universitas Negeri Semarang - Cloud Computing 
+5. C283B4KY0210 – Ahmad Hamid Balya – Universitas Negeri Semarang - Cloud Computing 
+6. A283B4KY3291  – Naufal Muhammad – Universitas Negeri Semarang - Mobile Development 
+
 
 ## Acknowledgments
 
